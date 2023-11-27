@@ -69,6 +69,7 @@ body{
     align-items: center;
 }
 
+
 .user{
     margin-left: auto;
     margin-right: 10px;
@@ -144,6 +145,7 @@ svg:hover #arm_down {
     display: flex;
     flex-direction: column;
     justify-content: left; 
+    min-height: 300px;
 }
 
 #bottom{
@@ -177,4 +179,85 @@ svg:hover #arm_down {
     margin-top: 10px;
 }
 
+#page_area{
+    display: grid;
+    grid-template-rows: 1fr 9fr;
+    grid-template-columns: 2.4fr 1fr;
+    font-family: myFont;
+    gap:5px;
+}
 
+.area{
+    background-color: rgba(0, 168, 171, 0.512);
+    border: 1px solid rgba(36, 167, 169, 0.249);
+    border-radius: 5px;
+
+}
+
+.area_top_left,.area_top_right{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+}
+
+.area_bottom_left,.area_bottom_right{
+    margin-bottom: 5px;
+}
+
+.area_top_left,.area_bottom_left{
+    margin-left: 5px;
+}
+.area_top_right,.area_bottom_right{
+    margin-right: 5px;
+}
+
+.area_bottom_left{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(auto-fit,minmax(150px,1fr));
+    gap: 5px;
+}
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(0, 168, 171, 0.512);
+    border: 1px solid rgba(36, 167, 169, 0.249);
+    border-radius: 5px;
+    font-size: small;
+}
+
+.card_top{
+    min-width: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card_top_right{
+    margin-left: auto;
+    margin-right: 0;
+}
+
+.area_bottom_right{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+}
+
+.a_card{
+    background-color: rgba(9, 215, 219, 0.512);
+    border: 1px solid rgba(36, 167, 169, 0.249);
+    border-radius: 5px;
+    font-size: small;
+    margin: 5px 5px 0 5px;
+    text-align: center;
+}
+
+.area_bottom_right :last-child{
+    margin-bottom: 5px;
+}
